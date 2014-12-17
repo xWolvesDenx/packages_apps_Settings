@@ -154,5 +154,8 @@
 
     <string name="doze_always_on_title">Always-on Ambient Display</string>
     <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 </resources>
 
