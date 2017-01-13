@@ -42,6 +42,15 @@
            android:data="https://raw.githubusercontent.com/ValidusOs/vendor_validus/8.1/Changelog_Validus.txt" />
         </PreferenceScreen>
 
+        <!-- Feature-List -->
+        <Preference
+               android:key="feature-list"
+               android:title="Features at-a-glance">
+               <intent
+	        android:action="android.intent.action.VIEW"
+	        android:data="https://raw.githubusercontent.com/ValidusOs/Feature-List/master/README.md" />
+        </Preference>
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"
