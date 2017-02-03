@@ -53,5 +53,7 @@
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_medium">Medium brightness</string>
 
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
 

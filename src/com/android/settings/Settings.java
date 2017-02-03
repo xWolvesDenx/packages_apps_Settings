@@ -192,4 +192,6 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class WolvesDenActivity extends SettingsActivity {}
 
+    // Abc Additions.
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
