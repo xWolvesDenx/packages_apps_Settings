@@ -128,6 +128,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.gzr.wolvesden.fragments.HeadsUpSettings;
+import com.gzr.wolvesden.fragments.OmniJawsSettings;
 
 import com.gzr.wolvesden.WolvesDen;
 
@@ -250,6 +251,7 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             WolvesDen.class.getName(),
             HeadsUpSettings.class.getName(),
+            OmniJawsSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
