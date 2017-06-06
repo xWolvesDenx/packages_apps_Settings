@@ -87,4 +87,8 @@
     <!-- About phone screen, Validus device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string>
+
+    <!-- GZRomsApp -->
+    <string name="gzroms_app_title">Ground Zero Roms (Updates)</string>
+
 </resources>

@@ -53,6 +53,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
     private static final String LOG_TAG = "DeviceInfoSettings";
 
     private static final String KEY_LEGAL_CONTAINER = "legal_container";
+    private static final String KEY_GZROMS_APP = "gzRomsApp";
     private static final String KEY_FEATURE_LIST  = "feature-list";
 
     @Override
