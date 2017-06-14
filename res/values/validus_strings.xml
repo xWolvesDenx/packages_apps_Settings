@@ -27,6 +27,10 @@
     <string name="wolvesden_settings_activity">WolvesDen</string>
     <string name="wolvesden_settings_activity_summary">Additional project settings</string>
 
+    <!-- Changelog -->
+    <string name="changelog_validus_title">Changelog</string>
+    <string name="changelog_validus_error">Unable to load changelog</string>
+
     <string name="columns_menu">Columns layout</string>
     <string name="hide_summary_menu">Hide summary</string>
     <string name="hide_suggestions_menu">Hide suggestions</string>
