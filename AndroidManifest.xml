@@ -3107,5 +3107,18 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+        <activity android:name=".Settings$WolvesDenActivity"
+                  android:label="@string/wolvesden_settings_activity"
+                  android:icon="@drawable/ic_settings_wolvesden">
+            <intent-filter android:priority="12">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.gzr.wolvesden.WolvesDen"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/wolvesden_settings_activity_summary"/>
+        </activity>
     </application>
 </manifest>
