@@ -127,6 +127,8 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.gzr.wolvesden.fragments.HeadsUpSettings;
+
 import com.gzr.wolvesden.WolvesDen;
 
 public class SettingsGateway {
@@ -247,6 +249,7 @@ public class SettingsGateway {
             WebViewAppPicker.class.getName(),
             LockscreenDashboardFragment.class.getName(),
             WolvesDen.class.getName(),
+            HeadsUpSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
