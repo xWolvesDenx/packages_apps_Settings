@@ -151,5 +151,8 @@
     <!-- About phone screen, Validus device maintainer name -->
     <string name="device_maintainer">Device maintainer</string>
     <string name="device_maintainers">Device maintainers</string>
+
+    <string name="doze_always_on_title">Always-on Ambient Display</string>
+    <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
 </resources>
 
