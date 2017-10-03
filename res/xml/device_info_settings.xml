@@ -33,14 +33,14 @@
         </Preference>
 
         <!-- Changelog -->
-        <PreferenceScreen
+        <Preference
            android:key="translator"
            android:title="@string/changelog_validus_title"
                 android:summary="ROM latest changes, know what you get!" >
                <intent
            android:action="android.intent.action.VIEW"
            android:data="https://raw.githubusercontent.com/ValidusOs/vendor_validus/8.1/Changelog_Validus.txt" />
-        </PreferenceScreen>
+        </Preference>
 
         <!-- Feature-List -->
         <Preference
