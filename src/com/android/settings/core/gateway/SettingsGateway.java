@@ -134,6 +134,10 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.gzr.wolvesden.WolvesDen;
+import com.gzr.wolvesden.fragments.FlingSettings;
+import com.gzr.wolvesden.fragments.NavbarSettings;
+import com.gzr.wolvesden.fragments.PulseSettings;
+import com.gzr.wolvesden.fragments.SmartbarSettings;
 
 public class SettingsGateway {
 
@@ -258,6 +262,10 @@ public class SettingsGateway {
             DataUsageList.class.getName(),
             WolvesDen.class.getName(),
             RunningServices.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -297,5 +305,9 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.WolvesDenActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.NavigationSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName(),
     };
 }
