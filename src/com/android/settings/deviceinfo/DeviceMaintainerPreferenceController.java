@@ -21,9 +21,9 @@ import android.support.v7.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
-import com.android.settings.core.PreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
 
-public class DeviceMaintainerPreferenceController extends PreferenceController {
+public class DeviceMaintainerPreferenceController extends AbstractPreferenceController {
 
     private static final String DEVICE_MAINTAINER_PROPERTY = "ro.validus.maintainer";
     private static final String KEY_DEVICE_MAINTAINER = "device_maintainer";
