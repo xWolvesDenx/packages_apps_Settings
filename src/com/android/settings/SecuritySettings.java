@@ -1004,15 +1004,17 @@ public class SecuritySettings extends SettingsPreferenceFragment
         private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
         private static final String KEY_POWER_INSTANTLY_LOCKS = "power_button_instantly_locks";
         private static final String KEY_DIRECTLY_SHOW = "directlyshow";
+        private static final String KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
 
         // These switch preferences need special handling since they're not all stored in Settings.
         private static final String SWITCH_PREFERENCE_KEYS[] = { KEY_LOCK_AFTER_TIMEOUT,
-                KEY_VISIBLE_PATTERN, KEY_POWER_INSTANTLY_LOCKS, KEY_DIRECTLY_SHOW };
+                KEY_VISIBLE_PATTERN, KEY_POWER_INSTANTLY_LOCKS, KEY_DIRECTLY_SHOW, KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL };
 
         private TimeoutListPreference mLockAfter;
         private SwitchPreference mVisiblePattern;
         private SwitchPreference mPowerButtonInstantlyLocks;
         private SwitchPreference mDirectlyShow;
+        private SwitchPreference mQuickUnlockScreen;
 
         private TrustAgentManager mTrustAgentManager;
         private LockPatternUtils mLockPatternUtils;
@@ -1055,6 +1057,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 mDirectlyShow.setChecked(mLockPatternUtils.shouldPassToSecurityView(
                         MY_USER_ID));
             }
+            if (mQuickUnlockScreen != null) {
+                mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 0) == 1);
+            }
 
             mOwnerInfoPreferenceController.updateSummary();
         }
@@ -1086,6 +1092,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
             // directly show
             mDirectlyShow = (SwitchPreference) findPreference(KEY_DIRECTLY_SHOW);
+
+            // Quick Unlock Screen Control
+            mQuickUnlockScreen = (SwitchPreference) findPreference(KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL);
 
             // visible pattern
             mVisiblePattern = (SwitchPreference) findPreference(KEY_VISIBLE_PATTERN);
@@ -1213,6 +1222,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 mLockPatternUtils.setVisiblePatternEnabled((Boolean) value, MY_USER_ID);
             } else if (KEY_DIRECTLY_SHOW.equals(key)) {
                 mLockPatternUtils.setPassToSecurityView((Boolean) value, MY_USER_ID);
+            } else if (KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL.equals(key)) {
+                Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
+                    (Boolean) value ? 1 : 0);
             }
             return true;
         }

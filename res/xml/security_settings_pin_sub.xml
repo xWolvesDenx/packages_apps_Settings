@@ -33,6 +33,12 @@
         android:summary="@string/lock_directly_show_summary" />
 
     <SwitchPreference
+        android:key="quick_unlock_control"
+        android:persistent="false"
+        android:title="@string/unlock_quick_unlock_control_title"
+        android:summary="@string/unlock_quick_unlock_control_summary" />
+
+    <SwitchPreference
         android:key="power_button_instantly_locks"
         android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
 
