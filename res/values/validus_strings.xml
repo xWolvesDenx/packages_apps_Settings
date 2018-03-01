@@ -267,4 +267,7 @@
     <string name="proximity_wake_title">Prevent accidental wake up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
 </resources>
