@@ -138,6 +138,7 @@ import com.gzr.wolvesden.fragments.FlingSettings;
 import com.gzr.wolvesden.fragments.NavbarSettings;
 import com.gzr.wolvesden.fragments.PulseSettings;
 import com.gzr.wolvesden.fragments.SmartbarSettings;
+import com.gzr.wolvesden.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -266,6 +267,7 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -309,5 +311,6 @@ public class SettingsGateway {
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
