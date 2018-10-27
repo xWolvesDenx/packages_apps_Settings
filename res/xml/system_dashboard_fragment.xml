@@ -39,6 +39,21 @@
         android:fragment="com.android.settings.gzosp.dashboard.ButtonSettings"
         settings:controller="com.android.settings.gzosp.dashboard.ButtonSettingsPreferenceController"/>
 
+    <!-- Show Network Traffic State on Statusbar -->
+    <com.android.settings.gzosp.SystemSettingSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:defaultValue="false" />
+
+    <com.android.settings.preference.CustomSeekBarPreference
+       android:key="network_traffic_autohide_threshold"
+       android:title="@string/network_traffic_autohide_threshold_title"
+       android:max="255"
+       settings:min="0"
+       settings:units=""
+       android:defaultValue="1"
+       android:dependency="network_traffic_state" />
+
     <!-- Backup -->
     <Preference
         android:key="backup_settings"
