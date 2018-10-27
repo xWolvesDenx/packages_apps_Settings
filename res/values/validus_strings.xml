@@ -17,6 +17,9 @@
 
     <!-- Validus version -->
     <string name="rom_version_title">Validus version</string>
+    
+    <string name="wolvesden_settings_activity">WolvesDen</string>
+    <string name="wolvesden_settings_activity_summary">Additional project settings</string>
 
     <!-- MSIM Manual provisioning -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
